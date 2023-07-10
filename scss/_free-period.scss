@@ -1,0 +1,32 @@
+.free-period {
+    .container {
+        width: 134rem;
+    }
+    &-container {
+        background: url(../img/main/free-period-back.png) no-repeat;
+        background-size: cover;
+        height: 65.9rem;
+        padding-top: 10.4rem;
+    }
+    &__title {
+        width: 83rem;
+        margin: 0 auto;
+        color: #FFF;
+        text-align: center;
+        font-family: 'Segoe UI Bold';
+        font-size: 3.5rem;
+        font-style: normal;
+        line-height: normal;
+        margin-bottom: 5.5rem;
+
+        span {
+            color: #70F0EE;
+        }
+    }
+    &__btn {
+        font-family: 'Segoe UI';
+        background: linear-gradient(90deg, #FEFEFE 0%, #FFF 100%);
+        margin: 0 auto;
+        color: #292929;
+    }
+}

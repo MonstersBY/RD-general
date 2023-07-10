@@ -1,0 +1,112 @@
+.results {
+    .container {
+        width: 100%;
+        position: relative;
+    }
+    .main-title {
+        margin-left: 28.6rem;
+        margin-bottom: 7.2rem;
+    }
+    
+    .swiper-slide {
+        width: 16%;
+        width: 22.188%;
+        height: auto;
+        border-radius: 2rem;
+        background-color: #FFF;
+        filter: drop-shadow(20px 30px 70px #DFE2EB);
+        height: fit-content;
+    }
+    &-swiper {
+        padding: 20rem 0;
+        margin: -20rem 0;
+    }
+    .swiper-wrapper {
+        margin-left: -46rem;
+    }
+
+    &-slide {
+        padding: 2.1rem 2.6rem 2rem 2.8rem;
+        position: relative;
+
+        &__subtitle {
+            font-size: 1.8rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+        }
+        &__title {
+            color: #5EC99A;
+            font-family: 'Segoe UI Bold';
+            font-size: 2.2rem;
+            font-style: normal;
+            line-height: normal;
+            margin-bottom: 3rem;
+        }
+        &__img {
+            margin-bottom: 5rem;
+            border-radius: 2rem;
+            width: 37.2rem;
+            height: 21.1rem;
+
+            img {
+                border-radius: 2rem;
+                height: 100%;
+                object-fit: fill;
+            }
+        }
+        &__date {
+            font-family: 'Segoe UI Bold';
+            font-size: 1.8rem;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 0.009rem;
+
+            span {
+                color: #1F1F1F33;
+            }
+        }
+        &__location {
+            position: absolute;
+            background: #1F1F1F;
+            padding: 1.5rem 4rem 1.5rem 3.9rem;
+            bottom: 0;
+            right: 0;
+            color: #FFF;
+            font-size: 1.6rem;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 0.008rem;
+            border-bottom-right-radius: 2rem;
+            border-top-left-radius: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+
+            svg {
+                width: 1.3798rem;
+                height: 1.6rem;
+            }
+        }
+    }
+
+    &-button-next, &-button-prev {
+        top: 17%;
+        color: #292929;
+        height: 4.1rem;
+    }
+    &-button-next {
+        left: auto;
+        right: 29rem;
+    }
+    &-button-prev {
+        left: auto;
+        right: 35.5rem;
+    }
+    &-pagination {
+        top: 10.5%;
+        right: 44rem;  
+        display: flex;
+        gap: 3.4rem;
+    }
+}

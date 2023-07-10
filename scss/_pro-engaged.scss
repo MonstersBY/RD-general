@@ -1,0 +1,75 @@
+.pro-engaged {
+    .container {
+        width: 134rem;
+    }
+    .main-title {
+        margin: 0 auto;
+        width: 95rem;
+        text-align: center;
+        margin-bottom: 11rem;
+    }
+    &-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &-item {
+        position: relative;
+        background-size: cover;
+        width: 42.6364rem;
+        height: 29.7rem;
+        margin-bottom: 9.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2rem;
+
+        &:nth-child(1) {
+            background: url(../img/main/pro-engaged/back-1.jpg) no-repeat;
+        }
+        &:nth-child(2) {
+            background: url(../img/main/pro-engaged/back-2.jpg) no-repeat;
+        }
+        &:nth-child(3) {
+            background: url(../img/main/pro-engaged/back-3.jpg) no-repeat;
+        }
+        &:nth-child(4) {
+            background: url(../img/main/pro-engaged/back-4.jpg) no-repeat;
+            margin-bottom: 0;
+        }
+        &:nth-child(5) {
+            background: url(../img/main/pro-engaged/back-5.jpg) no-repeat;
+            margin-bottom: 0;
+        }
+        &:nth-child(6) {
+            background: url(../img/main/pro-engaged/back-6.jpg) no-repeat;
+            margin-bottom: 0;
+
+            .pro-engaged-item__text {
+                width: 36rem;
+            }
+        }
+        &__number {
+            font-family: 'Segoe UI Bold';
+            font-size: 16rem;
+            font-style: normal;
+            line-height: normal;
+            color: #C5C5C5;
+            position: absolute;
+            z-index: -1;
+            top: -13.5rem;
+            left: 50%;
+            transform: translateX(-50%);  
+        }
+        &__text {
+            color: #FFF;
+            text-align: center;
+            font-family: 'Segoe UI Bold';
+            font-size: 2.4rem;
+            font-style: normal;
+            line-height: normal;
+            width: 29rem;
+        }
+    }
+
+}

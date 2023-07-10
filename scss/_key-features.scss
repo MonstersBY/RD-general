@@ -1,0 +1,80 @@
+.key-features {
+    .container {
+        width: 134.2rem;
+    }
+    .main-title {
+        margin-bottom: 5.7rem;
+    }
+
+    &-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-item {
+        position: relative;
+        background: #FFF;
+        width: 42.6rem;
+        height: 35.3rem;
+        border-radius: 2rem;
+        padding: 2.1rem 2.4rem 4.4rem 3.9rem;
+        display: flex;
+        flex-direction: column;
+
+        &:nth-child(1) .key-features-item__back{
+            background: url(../img/main/key-features/back-1.png) no-repeat;
+        }
+        &:nth-child(2) .key-features-item__back{
+            background: url(../img/main/key-features/back-2.png) no-repeat;
+        }
+        &:nth-child(3) .key-features-item__back{
+            background: url(../img/main/key-features/back-3.png) no-repeat;
+        }
+
+        &__back {
+            top: 0;
+            left: 0;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+
+        &__number {
+            position: relative;
+            z-index: 1;
+            font-family: 'Segoe UI Bold';
+            font-size: 1.8rem;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 0.009rem;
+            width: fit-content;
+            margin-left: auto;
+        }
+        &__icon {
+            position: relative;
+            z-index: 1;
+            width: 3.9rem;
+            height: 3.9rem;
+            margin-top: auto;
+            margin-bottom: 3.6rem;
+        }
+        &__title {
+            position: relative;
+            z-index: 1;
+            font-family: 'Segoe UI Bold';
+            font-size: 3rem;
+            font-style: normal;
+            line-height: 3.2rem;
+            margin-bottom: 1.7rem;
+        }
+        &__subtitle {
+            position: relative;
+            z-index: 1;
+            font-family: 'Segoe UI';
+            font-size: 1.8rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 2.6rem;
+        }
+    }
+}

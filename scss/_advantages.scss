@@ -1,0 +1,54 @@
+.advantages {
+    .container {
+        width: 134rem;
+    }
+    .main-title {
+        margin-bottom: 6rem;
+    }
+    &-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-item {
+        width: 42.7rem;
+        height: 63.6rem;
+        border-radius: 2rem;
+        background-size: contain;
+        padding: 2.4rem 3.1rem 5.9rem 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &:nth-child(1) {
+            background: url(../img/main/advantages/back-1.jpg) no-repeat;
+        }
+        &:nth-child(2) {
+            background: url(../img/main/advantages/back-2.jpg) no-repeat;
+        }
+        &:nth-child(3) {
+            background: url(../img/main/advantages/back-3.jpg) no-repeat;
+        }
+
+        &__number {
+            width: fit-content;
+            margin-left: auto;
+            color: #090107;
+            font-family: 'Segoe UI Bold';
+            font-size: 1.8rem;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 0.009rem;
+        }
+        &__title {
+            color: #ECECEC;
+            font-family: 'Segoe UI Bold';
+            font-size: 3rem;
+            font-style: normal;
+            line-height: normal;
+
+            span {
+                opacity: 0;
+            }
+        }
+    }
+}

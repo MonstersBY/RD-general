@@ -1,0 +1,87 @@
+.competitive {
+    .container {
+        width: 100%;
+        position: relative;
+    }
+    .main-title {
+        margin-left: 28.6rem;
+        margin-bottom: 7.2rem;
+    }
+
+    .swiper-slide {
+        width: 16.407%;
+        height: 31.7rem;
+        border-radius: 2rem;
+    }
+
+    .swiper-wrapper {
+        margin-left: -52rem;
+    }
+    &-slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        justify-content: space-between;
+        padding: 2.6rem 0 3.5rem 0;
+        border-radius: 2rem;
+        color: #FFF;
+
+
+        &__back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-repeat: no-repeat;
+            z-index: -1;
+            border-radius: 2rem;
+            top: 0;
+        }
+        &__img {
+            position: absolute;
+            width: 25.3rem;
+            height: 21.5rem;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        &__number {
+            font-family: 'Myriad Pro Bold';
+            font-size: 1.8rem;
+            font-style: normal;
+            line-height: normal;
+            position: relative;
+        }
+        &__title {
+            font-family: 'Myriad Pro Bold';
+            font-size: 2.4rem;
+            font-style: normal;
+            line-height: normal;
+        }
+    }
+    &-button-next, &-button-prev {
+        top: 17%;
+        color: #292929;
+        height: 4.1rem;
+    }
+    &-button-next {
+        left: auto;
+        right: 29rem;
+    }
+    &-button-prev {
+        left: auto;
+        right: 35.5rem;
+    }
+    &-pagination {
+        top: 10.5%;
+        right: 44rem;  
+        display: flex;
+        gap: 3.4rem;
+    }
+}

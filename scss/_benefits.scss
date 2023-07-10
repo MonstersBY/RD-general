@@ -1,0 +1,52 @@
+.benefits {
+    .container {
+        width: 134.3rem;
+    }
+    &-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8.8rem;
+
+        span {
+            color: #477AFC;
+        }
+    }
+    &-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-item {
+        width: 42.6rem;
+        display: flex;
+        gap: 1rem;
+        color: #161616;
+
+        &__number {
+            font-family: 'Segoe UI Bold';
+            font-size: 1.6rem;
+            font-style: normal;
+        }
+        &__title {
+            font-family: 'Segoe UI Bold';
+            font-size: 3rem;
+            font-style: normal;
+            line-height: 3.99rem;
+            margin-bottom: 2.1rem;
+        }
+        &__text {
+            p {
+                color: #161616;
+                font-size: 1.8rem;
+                font-style: normal;
+                line-height: 2.6rem;
+
+                span {
+                    font-family: 'Segoe UI Bold';
+                    color: #477AFC;
+                }
+            }
+        }
+    }
+
+}

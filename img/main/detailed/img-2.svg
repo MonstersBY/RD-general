@@ -1,0 +1,16 @@
+<svg width="183" height="182" viewBox="0 0 183 182" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 631853">
+<path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M141.948 135.161L131.65 45.4529L41.3525 45.3409L45.5035 67.1397L13.1422 103.384L87.4614 169.742L119.824 133.496L141.948 135.161Z" fill="url(#paint0_linear_2933_1373)"/>
+<path id="Union_2" fill-rule="evenodd" clip-rule="evenodd" d="M142.343 134.507L131.88 44.818L41.5828 44.871L45.7731 66.6595L13.4762 102.965L87.9165 169.187L120.213 132.882L142.343 134.507Z" fill="url(#paint1_linear_2933_1373)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_2933_1373" x1="131.65" y1="45.4529" x2="60" y2="164" gradientUnits="userSpaceOnUse">
+<stop stop-color="#37C95E"/>
+<stop offset="1" stop-color="#F8F8F8" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint1_linear_2933_1373" x1="42.1378" y1="61.0796" x2="104.5" y2="90.0006" gradientUnits="userSpaceOnUse">
+<stop stop-color="#618DFF"/>
+<stop offset="1" stop-color="#F8F8F8" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

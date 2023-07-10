@@ -1,0 +1,76 @@
+.baner {
+    background: #1F1F1F;
+    padding-top: 15.8rem;
+    padding-bottom: 20rem;
+    margin-bottom: 0;
+    color: #ECECEC;
+
+    .container {
+        width: 137.3rem;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    &-left {
+        font-family: 'Myriad Pro';
+        width: 33rem;
+        margin-top: 7.5rem;
+
+        &__subtitle {
+            font-family: 'Myriad Pro Bold';
+            color: #5EC99A;
+            font-size: 2.2rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 2.6rem;
+        }
+        &__title {
+            font-family: 'Myriad Pro Bold';
+            font-size: 5rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 6.5rem;
+            margin-bottom: 3.1rem;
+        }
+        &__text {
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 2.8rem;
+        }
+    }
+    &-center {
+        width: 74rem;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        margin: 0 auto;
+        top: -5.2rem;
+    }
+    &-right {
+        margin-top: 6.9rem;
+
+        &__title {
+            font-family: 'Roboto Bold';
+            font-size: 5rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 3.1rem;
+
+            span {
+                color: #96ACF9;
+            }
+        }
+        &__text {
+            font-family: 'Myriad Pro';
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 2.9rem;
+            margin-bottom: 4.2rem;
+            width: 29rem;
+        }
+    }
+}

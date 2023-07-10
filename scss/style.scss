@@ -1,0 +1,95 @@
+@import "set";
+
+
+.swiper {
+  overflow: hidden;
+}
+.btn {
+  color: #FFF;
+  background: linear-gradient(90deg, #111217 0%, #3B3D45 100%);
+  box-shadow: 15px 30px 30px 0px rgba(0, 0, 0, 0.25);
+  font-family: 'Myriad Pro';
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.5rem;
+  padding: 1.9rem 8.9rem 1.6rem 2.6rem;
+  position: relative;
+  display: block;
+  width: fit-content;
+  height: fit-content;
+
+  &::after {
+    content: '>';
+    display: block;
+    // background: url(../img/icon/btn_arrow.svg) no-repeat;
+    background-size: contain;
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: 1.1rem;
+    top: 0.5rem;
+    font-family: 'Circe';
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+.main {
+
+  &-title {
+    font-family: 'Segoe UI Bold';
+    font-size: 5rem;
+    font-style: normal;
+    line-height: normal;
+  }
+  &-subtitle {
+    font-family: 'Segoe UI Bold';
+    font-size: 2.2rem;
+    font-style: normal;
+    line-height: normal;
+  }
+}
+.swiper-pagination-bullet {
+  font-family: 'Euclid Circular A Bold';
+  font-size: 50px;
+  font-style: normal;
+  line-height: normal;
+  width: auto;
+  height: auto;
+  position: relative;
+  background: inherit;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  opacity: 0.3;
+}
+
+@media (min-width: 48.01em) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 48em) {
+  .desktop {
+    display: none;
+  }
+}
+
+
+@import "header";
+@import "footer";
+
+@import "baner";
+@import "our-cases";
+@import "key-features";
+@import "competitive";
+@import "advantages";
+@import "free-period";
+@import "results";
+@import "benefits";
+@import "pro-engaged";
+@import "detailed";
+@import "cost-promotion";

@@ -1,0 +1,96 @@
+.our-cases {
+    background: linear-gradient(0deg, rgba(248,248,248,1) 10%, rgba(31,31,31,1) 10%);
+    background-repeat: no-repeat;
+    padding-top: 15.8rem;
+    margin-top: -1rem;
+    color: #ECECEC;
+    position: relative;
+
+    .container {
+        width: 134rem;
+    }
+    
+    &-back {
+        width: 100%;
+        bottom: 10%;
+        position: absolute;
+    }
+
+    &-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 7.2rem;
+
+        .btn {
+            font-family: 'Segoe UI';
+            padding-right: 10.8rem;
+        }
+    }
+    &-bottom {
+        position: relative;
+
+        &__text {
+            color: #5EC99A;
+            font-family: 'Segoe UI Bold';
+            font-size: 2.2rem;
+            font-style: normal;
+            line-height: normal;
+            margin-bottom: 6.3rem;
+        }
+    }
+    &-button-next, &-button-prev {
+        top: 2%;
+        color: #FFFFFF;
+        height: 4.1rem;
+    }
+    &-button-next {
+        left: auto;
+        right: 0;
+    }
+    &-button-prev {
+        left: auto;
+        right: 6.5rem;
+    }
+    &-pagination {
+        top: -3%;
+        right: 16rem;    
+        display: flex;
+        gap: 5rem;
+
+        .swiper-pagination-bullet {
+            font-family: 'Euclid Circular A Bold';
+            font-size: 50px;
+            font-style: normal;
+            line-height: normal;
+            width: auto;
+            height: auto;
+            position: relative;
+            background: inherit;
+
+            &::after {
+                font-family: 'Euclid Circular A';
+                content: 'кейс';
+                display: block;
+                position: absolute;
+                font-size: 16px;
+                line-height: 2.029rem;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                bottom: -1.2rem;
+            }
+        }
+    }
+    &-slide {
+        border-radius: 2rem;
+        width: 100%;
+        height: 65.8rem;
+
+        img {
+            border-radius: 2rem;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

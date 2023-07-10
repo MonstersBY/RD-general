@@ -1,0 +1,43 @@
+.cost-promotion {
+    .container {
+        width: 134rem;
+    }
+    .main-title {
+        width: fit-content;
+        margin: 0 auto;
+        margin-bottom: 6.7rem;
+    }
+    &-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-item {
+        width: 42.6rem;
+        height: 42.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        border-radius: 2rem;
+
+        &:nth-child(1) {
+            background: url(../img/main/cost-prom/back-1.jpg) no-repeat;
+        }
+        &:nth-child(2) {
+            background: url(../img/main/cost-prom/back-2.jpg) no-repeat;
+        }
+        &:nth-child(3) {
+            background: url(../img/main/cost-prom/back-3.jpg) no-repeat;
+        }
+
+        &__text {
+            color: #FFF;
+            text-align: center;
+            font-family: 'Segoe UI Bold';
+            font-size: 3rem;
+            font-style: normal;
+            line-height: normal;
+            width: 28.9rem;
+        }
+    }
+}

@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Circe';
+    src: url('Circe.otf');
+    src: local('Circe'), local('Circe'),
+    url('Circe.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Circe Light';
+    src: url('Circe-light.otf');
+    src: local('Circe Light'), local('Circe Light'),
+    url('Circe-light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Euclid Circular A';
+    src: url('Euclid\ Circular\ A\ Regular.ttf');
+    src: local('Euclid Circular A'), local('Euclid Circular A'),
+    url('Euclid\ Circular\ A\ Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Euclid Circular A Bold';
+    src: url('Euclid\ Circular\ A\ Bold.ttf');
+    src: local('Euclid Circular A Bold'), local('Euclid Circular A Bold'),
+    url('Euclid\ Circular\ A\ Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro Black';
+    src: url('gothampro_black.ttf');
+    src: local('Gotham Pro Black'), local('Gotham Pro Black'),
+    url('gothampro_black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('MYRIADPRO-REGULAR.OTF');
+    src: local('Myriad Pro'), local('Myriad Pro'),
+    url('MYRIADPRO-REGULAR.OTF') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Myriad Pro Bold';
+    src: url('MYRIADPRO-BOLD.OTF');
+    src: local('Myriad Pro Bold'), local('Myriad Pro Bold'),
+    url('MYRIADPRO-BOLD.OTF') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('Roboto-Bold.ttf');
+    src: local('Roboto Bold'), local('Roboto Bold'),
+    url('Roboto-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('Segoe\ UI.ttf');
+    src: local('Segoe UI'), local('Segoe UI'),
+    url('Segoe\ UI.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Segoe UI Bold';
+    src: url('Segoe\ UI\ Bold.ttf');
+    src: local('Segoe UI Bold'), local('Segoe UI Bold'),
+    url('Segoe\ UI\ Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
