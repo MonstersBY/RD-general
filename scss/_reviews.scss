@@ -1,0 +1,63 @@
+.reviews {
+    .container {
+        width: 134rem;
+    }
+    .main-title {
+        margin-bottom: 6.5rem;
+    }
+    &-container {
+        position: relative;
+    }
+    &-slide {
+        display: flex;
+        gap: 8.6rem;
+
+        &-left {
+            width: 31.7rem;
+            height: 43.6341rem;
+            background-color: #F9F9F9;
+            filter: drop-shadow(1.947058868408203rem 2.9205881118774414rem 5.841176223754883rem rgba(227, 228, 231, 0.70));
+            padding: 2rem;
+        }
+        &-right {
+            width: 85rem;
+
+            &__title {
+                font-family: 'Myriad Pro Bold';
+                font-size: 2.8rem;
+                font-style: normal;
+                line-height: normal;
+                margin-bottom: 2.2rem;
+            }
+            &__text {
+                font-family: 'Myriad Pro';
+                font-size: 2rem;
+                font-style: normal;
+                line-height: normal;
+            }
+        }
+    }
+    &-button-next, &-button-prev {
+        top: auto;
+        bottom: 1%;
+        color: #292929;
+        height: 4.1rem;
+    }
+    &-button-next {
+        left: auto;
+        right: 0rem;
+    }
+    &-button-prev {
+        left: auto;
+        right: 6.5rem;
+    }
+    &-pagination {
+        top: auto;
+        bottom: -2%;
+        right: auto;  
+        left: 40.3rem;
+        display: flex;
+        gap: 3.5rem;
+    }
+
+}

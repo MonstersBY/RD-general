@@ -1,0 +1,67 @@
+.consultation {
+    background: #1F1F1F;
+    color: #FFF;
+    padding-bottom: 20rem;
+    padding-top: 10rem;
+    overflow: hidden;
+
+    .container {
+        width: 134rem;
+    }
+    &-container {
+        display: flex;
+        position: relative;
+    }
+    &-left {
+        width: 64.3rem;
+    }
+    &-right {
+        position: absolute;
+        right: -29rem;
+        top: -12rem;
+    }
+    &__subtitle {
+        color: #9FFDFD;
+        font-family: 'Segoe UI Bold';
+        font-size: 2.2rem;
+        font-style: normal;
+        line-height: normal;
+        margin-bottom: 2rem;
+    }
+    &__title {
+        font-family: 'Segoe UI Bold';
+        font-size: 5rem;
+        font-style: normal;
+        line-height: normal;
+        margin-bottom: 6.8rem;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        width: 52.8rem;
+
+        &-item {
+            margin-bottom: 5rem;
+            font-family: 'Myriad Pro Bold';
+            font-size: 1.8rem;
+            font-style: normal;
+            line-height: normal;
+            display: flex;
+            flex-direction: column;
+
+            span {
+                color: #8892C5;
+            }
+
+            input {
+                border-bottom: 1px solid #96ACF9;
+                padding-bottom: 1.3rem;
+            }
+
+        }
+        .btn {
+            margin-top: 1.6rem;
+            padding-right: 12.9rem;
+        }
+    }
+}

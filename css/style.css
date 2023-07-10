@@ -228,7 +228,7 @@ section {
 .baner {
   background: #1F1F1F;
   padding-top: 15.8rem;
-  padding-bottom: 20rem;
+  padding-bottom: 28rem;
   margin-bottom: 0;
   color: #ECECEC;
 }
@@ -307,7 +307,7 @@ section {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, rgb(248, 248, 248)), color-stop(10%, rgb(31, 31, 31)));
   background: linear-gradient(0deg, rgb(248, 248, 248) 10%, rgb(31, 31, 31) 10%);
   background-repeat: no-repeat;
-  padding-top: 15.8rem;
+  padding-top: 7.8rem;
   margin-top: -1rem;
   color: #ECECEC;
   position: relative;
@@ -1022,4 +1022,263 @@ section {
   font-style: normal;
   line-height: normal;
   width: 28.9rem;
+}
+
+.service-packages {
+  margin-bottom: -1rem;
+  padding-bottom: 10rem;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(52.6%, rgb(31, 31, 31)), color-stop(52.6%, rgb(248, 248, 248)));
+  background: linear-gradient(0deg, rgb(31, 31, 31) 52.6%, rgb(248, 248, 248) 52.6%);
+}
+.service-packages .container {
+  width: 134rem;
+}
+.service-packages .main-title {
+  text-align: center;
+  margin-bottom: 1.7rem;
+}
+.service-packages__subtitle {
+  font-size: 1.8rem;
+  font-style: normal;
+  line-height: normal;
+  margin: 0 auto;
+  margin-bottom: 4.8rem;
+  width: 84.3rem;
+  text-align: center;
+}
+.service-packages-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.service-packages-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 1rem 2rem 5rem -2rem rgba(0, 0, 0, 0.5);
+          box-shadow: 1rem 2rem 5rem -2rem rgba(0, 0, 0, 0.5);
+  border-radius: 2rem;
+  width: 31.6rem;
+  height: 41.7rem;
+  padding: 4.6rem 0 3.9rem;
+}
+.service-packages-item:nth-child(1) {
+  background: url(../img/main/service-pack/back-1.jpg) no-repeat;
+  background-size: cover;
+}
+.service-packages-item:nth-child(2) {
+  background: url(../img/main/service-pack/back-2.jpg) no-repeat;
+  background-size: cover;
+}
+.service-packages-item:nth-child(3) {
+  background: url(../img/main/service-pack/back-3.jpg) no-repeat;
+  background-size: cover;
+}
+.service-packages-item:nth-child(4) {
+  background: url(../img/main/service-pack/back-4.jpg) no-repeat;
+  background-size: cover;
+}
+.service-packages-item__top {
+  color: #FFF;
+  text-align: center;
+  height: 15.2rem;
+}
+.service-packages-item__name {
+  font-size: 1.2rem;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.service-packages-item__price {
+  font-family: "Segoe UI Bold";
+  font-size: 3.5rem;
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 1rem;
+}
+.service-packages-item__price sub {
+  font-size: 2rem;
+}
+.service-packages-item__class {
+  font-size: 1.8rem;
+  font-style: normal;
+  line-height: normal;
+}
+.service-packages-item__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+  padding: 5.4rem 2.5rem 0;
+  color: #161616;
+}
+.service-packages-item__text {
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+.service-packages-item__text sup {
+  color: #477AFC;
+  font-family: "Segoe UI Bold";
+  font-size: 1.4rem;
+  font-style: normal;
+  line-height: normal;
+}
+.service-packages-item__text span {
+  color: rgba(22, 22, 22, 0.5019607843);
+}
+
+.consultation {
+  background: #1F1F1F;
+  color: #FFF;
+  padding-bottom: 20rem;
+  padding-top: 10rem;
+  overflow: hidden;
+}
+.consultation .container {
+  width: 134rem;
+}
+.consultation-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.consultation-left {
+  width: 64.3rem;
+}
+.consultation-right {
+  position: absolute;
+  right: -29rem;
+  top: -12rem;
+}
+.consultation__subtitle {
+  color: #9FFDFD;
+  font-family: "Segoe UI Bold";
+  font-size: 2.2rem;
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 2rem;
+}
+.consultation__title {
+  font-family: "Segoe UI Bold";
+  font-size: 5rem;
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 6.8rem;
+}
+.consultation__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 52.8rem;
+}
+.consultation__form-item {
+  margin-bottom: 5rem;
+  font-family: "Myriad Pro Bold";
+  font-size: 1.8rem;
+  font-style: normal;
+  line-height: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.consultation__form-item span {
+  color: #8892C5;
+}
+.consultation__form-item input {
+  border-bottom: 1px solid #96ACF9;
+  padding-bottom: 1.3rem;
+}
+.consultation__form .btn {
+  margin-top: 1.6rem;
+  padding-right: 12.9rem;
+}
+
+.reviews .container {
+  width: 134rem;
+}
+.reviews .main-title {
+  margin-bottom: 6.5rem;
+}
+.reviews-container {
+  position: relative;
+}
+.reviews-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8.6rem;
+}
+.reviews-slide-left {
+  width: 31.7rem;
+  height: 43.6341rem;
+  background-color: #F9F9F9;
+  -webkit-filter: drop-shadow(1.9470588684rem 2.9205881119rem 5.8411762238rem rgba(227, 228, 231, 0.7));
+          filter: drop-shadow(1.9470588684rem 2.9205881119rem 5.8411762238rem rgba(227, 228, 231, 0.7));
+  padding: 2rem;
+}
+.reviews-slide-right {
+  width: 85rem;
+}
+.reviews-slide-right__title {
+  font-family: "Myriad Pro Bold";
+  font-size: 2.8rem;
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 2.2rem;
+}
+.reviews-slide-right__text {
+  font-family: "Myriad Pro";
+  font-size: 2rem;
+  font-style: normal;
+  line-height: normal;
+}
+.reviews-button-next, .reviews-button-prev {
+  top: auto;
+  bottom: 1%;
+  color: #292929;
+  height: 4.1rem;
+}
+.reviews-button-next {
+  left: auto;
+  right: 0rem;
+}
+.reviews-button-prev {
+  left: auto;
+  right: 6.5rem;
+}
+.reviews-pagination {
+  top: auto;
+  bottom: -2%;
+  right: auto;
+  left: 40.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3.5rem;
 }

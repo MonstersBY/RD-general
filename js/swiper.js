@@ -60,3 +60,17 @@ var results_swiper = new Swiper(".results-swiper", {
 });
 
 
+var reviews_swiper = new Swiper(".reviews-swiper", {
+    spaceBetween: rem(10),
+    pagination: {
+        el: ".reviews-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">0' + (index + 1) + "</span>";
+        },
+    },
+    navigation: {
+        nextEl: ".reviews-button-next",
+        prevEl: ".reviews-button-prev",
+    },
+});

@@ -1,0 +1,105 @@
+.service-packages {
+    margin-bottom: -1rem;
+    padding-bottom: 10rem;
+    .container {
+        width: 134rem;
+    }
+    background: linear-gradient(0deg, rgba(31,31,31,1) 52.6%, rgba(248,248,248,1) 52.6%);
+    .main-title {
+        text-align: center;
+        margin-bottom: 1.7rem;
+    }
+    &__subtitle {
+        font-size: 1.8rem;
+        font-style: normal;
+        line-height: normal;
+        margin: 0 auto;
+        margin-bottom: 4.8rem;
+        width: 84.3rem;
+        text-align: center;
+    }
+    &-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-item {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 1rem 2rem 5rem -2rem rgba(0, 0, 0, 0.50);
+        border-radius: 2rem;
+        width: 31.6rem;
+        height: 41.7rem;
+        padding: 4.6rem 0 3.9rem;
+
+        &:nth-child(1) {
+            background: url(../img/main/service-pack/back-1.jpg) no-repeat;
+            background-size: cover;
+        }
+        &:nth-child(2) {
+            background: url(../img/main/service-pack/back-2.jpg) no-repeat;
+            background-size: cover;
+        }
+        &:nth-child(3) {
+            background: url(../img/main/service-pack/back-3.jpg) no-repeat;
+            background-size: cover;
+        }
+        &:nth-child(4) {
+            background: url(../img/main/service-pack/back-4.jpg) no-repeat;
+            background-size: cover;
+        }
+
+        &__top {
+            color: #FFF;
+            text-align: center;
+            height: 15.2rem;
+        }
+        &__name {
+            font-size: 1.2rem;
+            line-height: normal;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+        &__price {
+            font-family: 'Segoe UI Bold';
+            font-size: 3.5rem;
+            font-style: normal;
+            line-height: normal;
+            margin-bottom: 1rem;
+
+            sub {
+                font-size: 2rem;
+            }
+        }
+        &__class {
+            font-size: 1.8rem;
+            font-style: normal;
+            line-height: normal;
+        }
+        &__bottom {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            padding: 5.4rem 2.5rem 0;
+            color: #161616;
+        }
+        &__text {
+            font-size: 1.8rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            display: flex;
+            gap: 1rem;
+
+            sup {
+                color: #477AFC;
+                font-family: 'Segoe UI Bold';
+                font-size: 1.4rem;
+                font-style: normal;
+                line-height: normal;
+            }
+            span {
+                color: #16161680;
+            }
+        }
+    }
+}
