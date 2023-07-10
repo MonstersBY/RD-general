@@ -356,9 +356,25 @@ section {
   left: auto;
   right: 0;
 }
+.our-cases-button-next::after {
+  content: "";
+  display: block;
+  background: url(../img/icon/swiper-next-white.svg) no-repeat;
+  background-size: cover;
+  width: 2.2rem;
+  height: 4.1rem;
+}
 .our-cases-button-prev {
   left: auto;
   right: 6.5rem;
+}
+.our-cases-button-prev::after {
+  content: "";
+  display: block;
+  background: url(../img/icon/swiper-prev-white.svg) no-repeat;
+  background-size: cover;
+  width: 2.2rem;
+  height: 4.1rem;
 }
 .our-cases-pagination {
   top: -3%;
@@ -568,9 +584,25 @@ section {
   left: auto;
   right: 29rem;
 }
+.competitive-button-next::after {
+  content: "";
+  display: block;
+  background: url(../img/icon/swiper-next.svg) no-repeat;
+  background-size: cover;
+  width: 2.2rem;
+  height: 4.1rem;
+}
 .competitive-button-prev {
   left: auto;
   right: 35.5rem;
+}
+.competitive-button-prev::after {
+  content: "";
+  display: block;
+  background: url(../img/icon/swiper-prev.svg) no-repeat;
+  background-size: cover;
+  width: 2.2rem;
+  height: 4.1rem;
 }
 .competitive-pagination {
   top: 10.5%;
@@ -768,7 +800,7 @@ section {
   height: 1.6rem;
 }
 .results-button-next, .results-button-prev {
-  top: 17%;
+  top: 12%;
   color: #292929;
   height: 4.1rem;
 }
@@ -776,12 +808,28 @@ section {
   left: auto;
   right: 29rem;
 }
+.results-button-next::after {
+  content: "";
+  display: block;
+  background: url(../img/icon/swiper-next.svg) no-repeat;
+  background-size: cover;
+  width: 2.2rem;
+  height: 4.1rem;
+}
 .results-button-prev {
   left: auto;
   right: 35.5rem;
 }
+.results-button-prev::after {
+  content: "";
+  display: block;
+  background: url(../img/icon/swiper-prev.svg) no-repeat;
+  background-size: cover;
+  width: 2.2rem;
+  height: 4.1rem;
+}
 .results-pagination {
-  top: 10.5%;
+  top: 8%;
   right: 44rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1268,9 +1316,25 @@ section {
   left: auto;
   right: 0rem;
 }
+.reviews-button-next::after {
+  content: "";
+  display: block;
+  background: url(../img/icon/swiper-next.svg) no-repeat;
+  background-size: cover;
+  width: 2.2rem;
+  height: 4.1rem;
+}
 .reviews-button-prev {
   left: auto;
   right: 6.5rem;
+}
+.reviews-button-prev::after {
+  content: "";
+  display: block;
+  background: url(../img/icon/swiper-prev.svg) no-repeat;
+  background-size: cover;
+  width: 2.2rem;
+  height: 4.1rem;
 }
 .reviews-pagination {
   top: auto;

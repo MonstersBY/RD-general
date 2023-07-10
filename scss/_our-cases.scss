@@ -47,10 +47,28 @@
     &-button-next {
         left: auto;
         right: 0;
+
+        &::after {
+            content: '';
+            display: block;
+            background: url(../img/icon/swiper-next-white.svg) no-repeat;
+            background-size: cover;
+            width: 2.2rem;
+            height: 4.1rem;
+        }
     }
     &-button-prev {
         left: auto;
         right: 6.5rem;
+
+        &::after {
+            content: '';
+            display: block;
+            background: url(../img/icon/swiper-prev-white.svg) no-repeat;
+            background-size: cover;
+            width: 2.2rem;
+            height: 4.1rem;
+        }
     }
     &-pagination {
         top: -3%;
