@@ -2,16 +2,16 @@ $('.competitive .competitive-slide__back').each(function(x){
     // console.log(x%4)
     switch (x%4) {
         case 0:
-            $('.competitive .competitive-slide__back')[x].style.backgroundImage = "url('../img/main/competitive/back-1j.jpg')"
+            $('.competitive .competitive-slide__back')[x].style.backgroundImage = "url('./img/main/competitive/back-1j.jpg')"
             break
         case 1:
-            $('.competitive .competitive-slide__back')[x].style.backgroundImage = "url('../img/main/competitive/back-2j.jpg')"
+            $('.competitive .competitive-slide__back')[x].style.backgroundImage = "url('./img/main/competitive/back-2j.jpg')"
             break
         case 2:
-            $('.competitive .competitive-slide__back')[x].style.backgroundImage = "url('../img/main/competitive/back-3j.jpg')"
+            $('.competitive .competitive-slide__back')[x].style.backgroundImage = "url('./img/main/competitive/back-3j.jpg')"
             break
         case 3:
-            $('.competitive .competitive-slide__back')[x].style.backgroundImage = "url('../img/main/competitive/back-4j.jpg')"
+            $('.competitive .competitive-slide__back')[x].style.backgroundImage = "url('./img/main/competitive/back-4j.jpg')"
             break
       }
 })
