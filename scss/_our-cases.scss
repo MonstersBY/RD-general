@@ -5,14 +5,10 @@
     margin-top: -1rem;
     color: #ECECEC;
     position: relative;
-
-    .container {
-        width: 134rem;
-    }
     
     &-back {
         width: 100%;
-        bottom: 10%;
+        bottom: 7%;
         position: absolute;
     }
 
@@ -21,6 +17,11 @@
         justify-content: space-between;
         align-items: center;
         margin-bottom: 7.2rem;
+        position: relative;
+
+        .main-title {
+            margin-bottom: 1rem;
+        }
 
         .btn {
             font-family: 'Segoe UI';
@@ -78,7 +79,7 @@
 
         .swiper-pagination-bullet {
             font-family: 'Euclid Circular A Bold';
-            font-size: 50px;
+            font-size: 5rem;
             font-style: normal;
             line-height: normal;
             width: auto;
@@ -91,7 +92,7 @@
                 content: 'кейс';
                 display: block;
                 position: absolute;
-                font-size: 16px;
+                font-size: 1.6rem;
                 line-height: 2.029rem;
                 left: 0;
                 right: 0;
@@ -101,14 +102,152 @@
         }
     }
     &-slide {
-        border-radius: 2rem;
+        border-radius: 20px;;
         width: 100%;
         height: 65.8rem;
 
         img {
-            border-radius: 2rem;
+            border-radius: 20px;;
             width: 100%;
             height: 100%;
+        }
+    }
+}
+
+@media (max-width: 48em) {
+    .our-cases {
+        background: linear-gradient(0deg, rgb(248, 248, 248) 15.7%, rgb(31, 31, 31) 10%);
+        background-repeat: no-repeat;
+        padding-top: 1.2rem;
+        margin-top: -1rem;
+        margin-bottom: 48rem;
+    
+        .container {
+            width: auto;
+        }
+        
+        &-back {
+            width: 100%;
+            bottom: 46.5%;
+            position: absolute;
+        }
+    
+        &-top {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 19.3rem;
+            position: relative;
+
+            & > div {
+                width: 100%;
+                margin-bottom: 6rem;
+            }
+    
+            .main-title {
+                margin-bottom: 3rem;
+            }
+    
+            .btn {
+                font-family: 'Myriad Pro';
+                padding-right: 17.8rem;
+                margin-right: auto;
+            }
+        }
+        &-swiper {
+            height: 135rem;
+        }
+        &-bottom {
+            position: relative;
+    
+            &__text {
+                color: #5EC99A;
+                font-family: 'Segoe UI Bold';
+                font-size: 3.26rem;
+                font-style: normal;
+                line-height: normal;
+                margin-bottom: 6.3rem;
+            }
+        }
+        &-button-next, &-button-prev {
+            top: auto;
+            bottom: -10%;
+            color: #FFFFFF;
+            height: 7rem;
+        }
+        &-button-next {
+            left: auto;
+            right: 0;
+    
+            &::after {
+                content: '';
+                display: block;
+                background: url(../img/icon/swiper-next.svg) no-repeat;
+                background-size: cover;
+                width: 3.7rem;
+                height: 7rem;
+            }
+        }
+        &-button-prev {
+            left: 0;
+            right: auto;
+    
+            &::after {
+                content: '';
+                display: block;
+                background: url(../img/icon/swiper-prev.svg) no-repeat;
+                background-size: cover;
+                width: 3.7rem;
+                height: 7rem;
+            }
+        }
+        &-pagination {
+            top: auto;
+            bottom: -11.7%;
+            right: 0;
+            left: 0;
+            margin: 0 auto;    
+            display: flex;
+            gap: 4.6rem;
+    
+            .swiper-pagination-bullet {
+                color: #292929;
+                font-family: 'Euclid Circular A Bold';
+                font-size: 6rem;
+                font-style: normal;
+                line-height: normal;
+                width: auto;
+                height: auto;
+                position: relative;
+                background: inherit;
+    
+                &::after {
+                    font-family: 'Euclid Circular A';
+                    content: 'кейс';
+                    display: block;
+                    position: absolute;
+                    font-size: 2.6rem;
+                    line-height: 2.029rem;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    bottom: -1.2rem;
+                }
+            }
+        }
+        &-slide {
+            border-radius: 20px;
+            width: 100%;
+            height: 100%;
+    
+            img {
+                border-radius: 20px;
+                width: 100%;
+                height: 100%;
+
+                object-fit: cover;
+            }
         }
     }
 }

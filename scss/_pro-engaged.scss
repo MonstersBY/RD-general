@@ -1,7 +1,4 @@
 .pro-engaged {
-    .container {
-        width: 134rem;
-    }
     .main-title {
         margin: 0 auto;
         width: 95rem;
@@ -22,28 +19,34 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 2rem;
+        border-radius: 20px;
 
         &:nth-child(1) {
             background: url(../img/main/pro-engaged/back-1.jpg) no-repeat;
+            background-size: cover;
         }
         &:nth-child(2) {
             background: url(../img/main/pro-engaged/back-2.jpg) no-repeat;
+            background-size: cover;
         }
         &:nth-child(3) {
             background: url(../img/main/pro-engaged/back-3.jpg) no-repeat;
+            background-size: cover;
         }
         &:nth-child(4) {
             background: url(../img/main/pro-engaged/back-4.jpg) no-repeat;
             margin-bottom: 0;
+            background-size: cover;
         }
         &:nth-child(5) {
             background: url(../img/main/pro-engaged/back-5.jpg) no-repeat;
             margin-bottom: 0;
+            background-size: cover;
         }
         &:nth-child(6) {
             background: url(../img/main/pro-engaged/back-6.jpg) no-repeat;
             margin-bottom: 0;
+            background-size: cover;
 
             .pro-engaged-item__text {
                 width: 36rem;
@@ -71,5 +74,67 @@
             width: 29rem;
         }
     }
+}
 
+@media (max-width: 48em) {
+    .pro-engaged {
+        margin-bottom: 21.5rem;
+        .main-title {
+            margin: 0;
+            width: auto;
+            text-align: left;
+            margin-bottom: 20.2rem;
+        }
+        &-container {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            overflow: auto;
+            width: 70rem;
+            padding-top: 10rem;
+            margin-top: -10rem;
+            gap: 3rem;
+        }
+        &-item {
+            position: relative;
+            background-size: cover;
+            width: 53rem;
+            flex: none;
+            height: 39.7rem;
+            margin-bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+    
+            &__number {
+                font-family: 'Segoe UI Bold';
+                font-size: 18rem;
+                font-style: normal;
+                line-height: normal;
+                color: #C5C5C5;
+                position: absolute;
+                z-index: -1;
+                top: -14.5rem;
+                left: 50%;
+                transform: translateX(-50%);  
+            }
+            &__text {
+                color: #FFF;
+                text-align: center;
+                font-family: 'Segoe UI Bold';
+                font-size: 4.3rem;
+                font-style: normal;
+                line-height: normal;
+                width: 29rem;
+            }
+        }
+        &-swiper {
+            padding: 10rem 4.7rem 0 0;
+            margin: -10rem -4.7rem 0 0;
+            .swiper-slide {
+                width: 53rem;
+            }
+        }
+    }
 }

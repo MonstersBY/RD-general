@@ -1,7 +1,4 @@
 .advantages {
-    .container {
-        width: 134rem;
-    }
     .main-title {
         margin-bottom: 6rem;
     }
@@ -12,7 +9,7 @@
     &-item {
         width: 42.7rem;
         height: 63.6rem;
-        border-radius: 2rem;
+        border-radius: 20px;;
         background-size: contain;
         padding: 2.4rem 3.1rem 5.9rem 4rem;
         display: flex;
@@ -21,12 +18,15 @@
 
         &:nth-child(1) {
             background: url(../img/main/advantages/back-1.jpg) no-repeat;
+            background-size: cover;
         }
         &:nth-child(2) {
             background: url(../img/main/advantages/back-2.jpg) no-repeat;
+            background-size: cover;
         }
         &:nth-child(3) {
             background: url(../img/main/advantages/back-3.jpg) no-repeat;
+            background-size: cover;
         }
 
         &__number {
@@ -48,6 +48,59 @@
 
             span {
                 opacity: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 48em) {
+    .advantages {
+        margin-bottom: 21.7rem;
+        .main-title {
+            margin-bottom: 5.5rem;
+        }
+        &-container {
+            display: flex;
+            flex-direction: column;
+            gap: 2.7rem;
+        }
+        &-item {
+            width: auto;
+            height: 39.7rem;
+            border-radius: 20px;
+            background-size: contain;
+            padding: 2.4rem 3.1rem 6.9rem 5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+    
+            &:nth-child(1) {
+                background: url(../img/main/advantages/back-m-1.jpg) no-repeat;
+                background-size: cover;
+            }
+            &:nth-child(2) {
+                background: url(../img/main/advantages/back-m-2.jpg) no-repeat;
+                background-size: cover;
+            }
+            &:nth-child(3) {
+                background: url(../img/main/advantages/back-m-3.jpg) no-repeat;
+                background-size: cover;
+            }
+    
+            &__number {
+                display: none;
+            }
+            &__title {
+                width: 38rem;
+                color: #ECECEC;
+                font-family: 'Segoe UI Bold';
+                font-size: 3.25rem;
+                font-style: normal;
+                line-height: normal;
+    
+                span {
+                    opacity: 0;
+                }
             }
         }
     }

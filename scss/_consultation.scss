@@ -5,9 +5,6 @@
     padding-top: 10rem;
     overflow: hidden;
 
-    .container {
-        width: 134rem;
-    }
     &-container {
         display: flex;
         position: relative;
@@ -62,6 +59,72 @@
         .btn {
             margin-top: 1.6rem;
             padding-right: 12.9rem;
+        }
+    }
+}
+
+@media (max-width: 48em) {
+    .consultation {
+        background: #1F1F1F;
+        color: #FFF;
+        padding-bottom: 0;
+        padding-top: 10rem;
+        overflow: hidden;
+        margin-bottom: 22rem;
+    
+        &-container {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        &-left {
+            width: auto;
+        }
+        &-right {
+            position: relative;
+            right: 38rem;
+            top: 0;
+            margin-bottom: -19rem;
+            width: 138rem;
+        }
+        &__subtitle {
+            font-size: 3.3rem;
+            margin-bottom: 4.2rem;
+        }
+        &__title {
+            font-family: 'Segoe UI Bold';
+            font-size: 6rem;
+            font-style: normal;
+            line-height: normal;
+            margin-bottom: 5.5rem;
+        }
+        &__form {
+            display: flex;
+            flex-direction: column;
+            width: auto;
+    
+            &-item {
+                margin-bottom: 6rem;
+                font-family: 'Myriad Pro Bold';
+                font-size: 3.25rem;
+                font-style: normal;
+                line-height: normal;
+                display: flex;
+                flex-direction: column;
+    
+                span {
+                    color: #8892C5;
+                }
+    
+                input {
+                    padding-bottom: 2rem;
+                }
+    
+            }
+            .btn {
+                margin-top: 3.6rem;
+                padding-right: 19rem;
+            }
         }
     }
 }

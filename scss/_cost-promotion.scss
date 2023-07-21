@@ -1,7 +1,4 @@
 .cost-promotion {
-    .container {
-        width: 134rem;
-    }
     .main-title {
         width: fit-content;
         margin: 0 auto;
@@ -17,17 +14,19 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-size: cover;
-        border-radius: 2rem;
+        border-radius: 20px;;
 
         &:nth-child(1) {
             background: url(../img/main/cost-prom/back-1.jpg) no-repeat;
+            background-size: cover;
         }
         &:nth-child(2) {
             background: url(../img/main/cost-prom/back-2.jpg) no-repeat;
+            background-size: cover;
         }
         &:nth-child(3) {
             background: url(../img/main/cost-prom/back-3.jpg) no-repeat;
+            background-size: cover;
         }
 
         &__text {
@@ -38,6 +37,54 @@
             font-style: normal;
             line-height: normal;
             width: 28.9rem;
+        }
+    }
+}
+
+@media (max-width: 48em) {
+    .cost-promotion {
+        margin-bottom: 22rem;
+        .main-title {
+            width: fit-content;
+            margin: 0 auto;
+            margin-bottom: 5.5rem;
+        }
+        &-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 2.8rem;
+        }
+        &-item {
+            width: auto;
+            height: 39.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;;
+    
+            &:nth-child(1) {
+                background: url(../img/main/cost-prom/back-m-1.jpg) no-repeat;
+                background-size: cover;
+            }
+            &:nth-child(2) {
+                background: url(../img/main/cost-prom/back-m-2.jpg) no-repeat;
+                background-size: cover;
+            }
+            &:nth-child(3) {
+                background: url(../img/main/cost-prom/back-m-3.jpg) no-repeat;
+                background-size: cover;
+            }
+    
+            &__text {
+                color: #FFF;
+                text-align: center;
+                font-family: 'Segoe UI Bold';
+                font-size: 4.27rem;
+                font-style: normal;
+                line-height: normal;
+                width: 35rem;
+            }
         }
     }
 }

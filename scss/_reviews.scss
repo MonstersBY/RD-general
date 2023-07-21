@@ -1,7 +1,4 @@
 .reviews {
-    .container {
-        width: 134rem;
-    }
     .main-title {
         margin-bottom: 6.5rem;
     }
@@ -17,7 +14,15 @@
             height: 43.6341rem;
             background-color: #F9F9F9;
             filter: drop-shadow(1.947058868408203rem 2.9205881118774414rem 5.841176223754883rem rgba(227, 228, 231, 0.70));
-            padding: 2rem;
+            padding: 3rem;
+
+            &__img {
+                height: 100%;
+
+                img {
+                    height: 100%;
+                }
+            }
         }
         &-right {
             width: 85rem;
@@ -77,5 +82,79 @@
         display: flex;
         gap: 3.5rem;
     }
+}
 
+@media (max-width: 48em) {
+    .reviews {
+        .main-title {
+            margin-bottom: 6.5rem;
+        }
+        &-container {
+            position: relative;
+        }
+        &-slide {
+            display: flex;
+            flex-direction: column;
+            gap: 5.6rem;
+    
+            &-left {
+                width: auto;
+                height: 89rem;
+                background-color: #F9F9F9;
+                filter: drop-shadow(19.47058868408203px 29.205881118774414px 58.41176223754883px rgba(227, 228, 231, 0.70));
+                padding: 3rem 4rem;
+            }
+            &-right {
+                width: auto;
+    
+                &__title {
+                    font-feature-settings: 'sups' on;
+                    font-family: 'Myriad Pro Bold';
+                    font-size: 3.2rem;
+                    font-style: normal;
+                    line-height: normal;
+                    margin-bottom: 3.2rem;
+                }
+                &__text {
+                    font-family: 'Myriad Pro';
+                    font-size: 2.7rem;
+                    font-style: normal;
+                    line-height: 133.333%;
+                }
+            }
+        }
+        &-button-next, &-button-prev {
+            top: auto;
+            bottom: -9.5%;
+            color: #FFFFFF;
+            height: 7rem;
+        }
+        &-button-next {
+            left: auto;
+            right: 0;
+    
+            &::after {
+                width: 3.7rem;
+                height: 7rem;
+            }
+        }
+        &-button-prev {
+            left: 0;
+            right: auto;
+    
+            &::after {
+                width: 3.7rem;
+                height: 7rem;
+            }
+        }
+        &-pagination {
+            top: auto;
+            bottom: -12%;
+            right: 0;
+            left: 0;
+            margin: 0 auto;
+            display: flex;
+            gap: 4.5rem;
+        }
+    }
 }

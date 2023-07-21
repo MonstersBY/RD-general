@@ -1,12 +1,10 @@
 .free-period {
-    .container {
-        width: 134rem;
-    }
     &-container {
-        background: url(../img/main/free-period-back.png) no-repeat;
+        background: url(../img/main/free-period-back.jpg) no-repeat;
         background-size: cover;
         height: 65.9rem;
         padding-top: 10.4rem;
+        border-radius: 20px;
     }
     &__title {
         width: 83rem;
@@ -28,5 +26,42 @@
         background: linear-gradient(90deg, #FEFEFE 0%, #FFF 100%);
         margin: 0 auto;
         color: #292929;
+    }
+}
+
+@media (max-width: 48em) {
+    .free-period {
+        margin-bottom: 27rem;
+        &-container {
+            background: url(../img/main/free-period-m-back.jpg) no-repeat;
+            background-size: cover;
+            height: 133.9rem;
+            padding: 9.2rem 4.8rem;
+        }
+        &__title {
+            width: auto;
+            margin: 0 auto;
+            color: #FFF;
+            text-align: left;
+            font-family: 'Segoe UI Bold';
+            font-size: 4.35rem;
+            font-style: normal;
+            line-height: normal;
+            margin-bottom: 5.8rem;
+    
+            span {
+                color: #70F0EE;
+            }
+        }
+        &__btn {
+            font-family: 'Myriad Pro';
+            background: linear-gradient(90deg, #FEFEFE 0%, #FFF 100%);
+            margin: 0 auto 0 0;
+            color: #292929;
+
+            &::after {
+                background: url(../img/icon/btn_arrow-left-black.svg) no-repeat;
+            }
+        }
     }
 }

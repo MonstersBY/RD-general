@@ -24,9 +24,9 @@ var our_cases_swiper = new Swiper(".our-cases-swiper", {
 });
 
 var competitive_swiper = new Swiper(".competitive-swiper", {
-    slidesPerView: 'auto',
-    slidesPerGroup: 4,
-    centeredSlides: true,
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    centeredSlides: false,
     spaceBetween: rem(3),
     pagination: {
         el: ".competitive-pagination",
@@ -39,12 +39,20 @@ var competitive_swiper = new Swiper(".competitive-swiper", {
         nextEl: ".competitive-button-next",
         prevEl: ".competitive-button-prev",
     },
+    breakpoints: {
+        769: {
+            slidesPerView: 'auto',
+            slidesPerGroup: 4,
+            spaceBetween: rem(3),
+            centeredSlides: true,
+        }
+    }
 });
 
 var results_swiper = new Swiper(".results-swiper", {
-    slidesPerView: 'auto',
-    slidesPerGroup: 3,
-    centeredSlides: true,
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    centeredSlides: false,
     spaceBetween: rem(3),
     pagination: {
         el: ".results-pagination",
@@ -56,6 +64,41 @@ var results_swiper = new Swiper(".results-swiper", {
     navigation: {
         nextEl: ".results-button-next",
         prevEl: ".results-button-prev",
+    },
+    breakpoints: {
+        769: {
+            slidesPerView: 'auto',
+            slidesPerGroup: 3,
+            centeredSlides: true,
+            spaceBetween: rem(3),
+        }
+    }
+});
+
+var pro_engaged_swiper = new Swiper(".pro-engaged-swiper", {
+    slidesPerView: 'auto',
+    spaceBetween: rem(2),
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+});
+
+var service_packages_swiper = new Swiper(".service-packages-swiper", {
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    centeredSlides: false,
+    spaceBetween: rem(3),
+    pagination: {
+        el: ".service-packages-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">0' + (index + 1) + "</span>";
+        },
+    },
+    navigation: {
+        nextEl: ".service-packages-button-next",
+        prevEl: ".service-packages-button-prev",
     },
 });
 

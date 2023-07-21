@@ -1,7 +1,4 @@
 .benefits {
-    .container {
-        width: 134.3rem;
-    }
     &-top {
         display: flex;
         justify-content: space-between;
@@ -48,5 +45,62 @@
             }
         }
     }
+}
 
+@media (max-width: 48em) {
+    .benefits {
+        margin-bottom: 21rem;
+        &-top {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 7.8rem;
+            gap: 5rem;
+    
+            span {
+                color: #477AFC;
+            }
+            .btn {
+                margin-right: auto;
+            }
+        }
+        &-container {
+            flex-direction: column;
+            gap: 5.8rem;
+        }
+        &-item {
+            width: auto;
+            display: flex;
+            gap: 1rem;
+            color: #161616;
+    
+            &__number {
+                font-family: 'Segoe UI Bold';
+                font-size: 2.7rem;
+                font-style: normal;
+            }
+            &__title {
+                font-family: 'Segoe UI Bold';
+                font-size: 4.44rem;
+                font-style: normal;
+                line-height: normal;
+                margin-bottom: 4.1rem;
+            }
+            &__text {
+                margin-top: -0.5rem;
+                p {
+                    color: #161616;
+                    font-size: 2.78rem;
+                    font-style: normal;
+                    line-height: 133.333%;
+    
+                    span {
+                        font-family: 'Segoe UI Bold';
+                        color: #477AFC;
+                    }
+                }
+            }
+        }
+    }
 }

@@ -12,14 +12,14 @@
         width: 16%;
         width: 22.188%;
         height: auto;
-        border-radius: 2rem;
+        border-radius: 20px;;
         background-color: #FFF;
         filter: drop-shadow(20px 30px 70px #DFE2EB);
         height: fit-content;
     }
     &-swiper {
-        padding: 20rem 0;
-        margin: -20rem 0;
+        padding-top: 20rem;
+        margin-top: -20rem;
     }
     .swiper-wrapper {
         margin-left: -46rem;
@@ -45,12 +45,12 @@
         }
         &__img {
             margin-bottom: 5rem;
-            border-radius: 2rem;
-            width: 37.2rem;
+            border-radius: 20px;;
+            width: 100%;
             height: 21.1rem;
 
             img {
-                border-radius: 2rem;
+                border-radius: 20px;;
                 height: 100%;
                 object-fit: fill;
             }
@@ -77,8 +77,8 @@
             font-style: normal;
             line-height: normal;
             letter-spacing: 0.008rem;
-            border-bottom-right-radius: 2rem;
-            border-top-left-radius: 2rem;
+            border-bottom-right-radius: 20px;
+            border-top-left-radius: 20px;
             display: flex;
             align-items: center;
             gap: 0.7rem;
@@ -126,5 +126,128 @@
         right: 44rem;  
         display: flex;
         gap: 3.4rem;
+    }
+}
+
+@media (max-width: 48em) {
+    .results {
+        margin-bottom: 35rem;
+        .container {
+            width: auto;
+            position: relative;
+        }
+        .main-title {
+            margin-left: 0;
+            margin-bottom: 5.7rem;
+        }
+        
+        .swiper-slide {
+            width: auto;
+            height: auto;
+            border-radius: 20px;
+            background-color: #FFF;
+            filter: drop-shadow(20px 30px 70px #DFE2EB);
+            height: fit-content;
+        }
+        &-swiper {
+            padding-top: 0;
+            margin-top: 0;
+        }
+        .swiper-wrapper {
+            margin-left: 0;
+        }
+    
+        &-slide {
+            padding: 4rem 5.06rem 2rem;
+            position: relative;
+    
+            &__subtitle {
+                font-size: 2.7rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 117%;
+            }
+            &__title {
+                font-size: 3.2rem;
+                margin-bottom: 5.1rem;
+            }
+            &__img {
+                margin-bottom: 8.1rem;
+                border-radius: 20px;;
+                width: 100%;
+                height: 31.55rem;
+    
+                img {
+                    border-radius: 20px;;
+                    height: 100%;
+                    object-fit: fill;
+                }
+            }
+            &__date {
+                font-family: 'Segoe UI Bold';
+                font-size: 2.76rem;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: 0.009rem;
+    
+                span {
+                    color: #1F1F1F33;
+                }
+            }
+            &__location {
+                position: absolute;
+                background: #1F1F1F;
+                padding: 2.5rem 5.35rem 2.5rem 6rem;
+                bottom: 0;
+                right: 0;
+                color: #FFF;
+                font-size: 2.6rem;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: 0.008rem;
+                display: flex;
+                align-items: center;
+                gap: 0.7rem;
+    
+                svg {
+                    width: 2.5rem;
+                    height: 2.9rem;
+                }
+            }
+        }
+    
+        &-button-next, &-button-prev {
+            top: auto;
+            bottom: -14.5%;
+            color: #FFFFFF;
+            height: 7rem;
+        }
+        &-button-next {
+            left: auto;
+            right: 4rem;
+    
+            &::after {
+                width: 3.7rem;
+                height: 7rem;
+            }
+        }
+        &-button-prev {
+            left: 4rem;
+            right: auto;
+    
+            &::after {
+                width: 3.7rem;
+                height: 7rem;
+            }
+        }
+        &-pagination {
+            top: auto;
+            bottom: -18.3%;
+            right: 0;
+            left: 0;
+            margin: 0 auto;
+            display: flex;
+            gap: 4.5rem;
+        }
     }
 }

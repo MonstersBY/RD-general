@@ -53,7 +53,7 @@
 }
 .swiper-pagination-bullet {
   font-family: 'Euclid Circular A Bold';
-  font-size: 50px;
+  font-size: 5rem;
   font-style: normal;
   line-height: normal;
   width: auto;
@@ -66,15 +66,67 @@
   opacity: 0.3;
 }
 
-@media (min-width: 48.01em) {
-  .mobile {
-    display: none;
-  }
-}
-
 @media (max-width: 48em) {
-  .desktop {
-    display: none;
+  .swiper-pagination {
+    overflow: auto;
+    width: 42.3rem;
+    padding: 0 0 3rem;
+  }
+  .main {
+
+    &-title {
+      font-family: 'Segoe UI Bold';
+      font-size: 6rem;
+      font-style: normal;
+      line-height: normal;
+    }
+    &-subtitle {
+      font-family: 'Segoe UI Bold';
+      font-size: 2.6rem;
+      font-style: normal;
+      line-height: normal;
+    }
+  }
+
+  .btn {
+    box-shadow: 9px 23px 38px 0px rgba(0, 0, 0, 0.15);
+    font-family: 'Myriad Pro';
+    font-size: 2.9rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 3rem 11.9rem 3rem 3rem;
+    position: relative;
+    display: block;
+    width: fit-content;
+    height: fit-content;
+  
+    &::after {
+      content: '';
+      display: block;
+      background: url(../img/icon/btn_arrow-left.svg) no-repeat;
+      background-size: contain;
+      width: 2rem;
+      height: 4rem;
+      position: absolute;
+      right: 2.5rem;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+  }
+  .swiper-pagination-bullet {
+    font-family: 'Euclid Circular A Bold';
+    font-size: 6.1rem;
+    font-style: normal;
+    line-height: normal;
+    width: auto;
+    height: auto;
+    position: relative;
+    background: inherit;
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active {
+    opacity: 0.3;
   }
 }
 
@@ -96,3 +148,15 @@
 @import "service-packages";
 @import "consultation";
 @import "reviews";
+
+
+@media (min-width: 48.01em) {
+  .mobile {
+    display: none;
+  }
+}
+@media (max-width: 48em) {
+  .desktop {
+    display: none;
+  }
+}
