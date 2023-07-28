@@ -23,6 +23,12 @@ var our_cases_swiper = new Swiper(".our-cases-swiper", {
     },
 });
 
+let our_cases_swiper_text = 'Портал в сфере наркологии'
+
+our_cases_swiper.on('slideChange', function (e) {
+    $('.our-cases-bottom__text').html(our_cases_swiper_text+(our_cases_swiper.activeIndex+1));
+});
+
 var competitive_swiper = new Swiper(".competitive-swiper", {
     slidesPerView: 1,
     slidesPerGroup: 1,
