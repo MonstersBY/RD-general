@@ -1,0 +1,50 @@
+.show-ad {
+    margin-bottom: 23rem;
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-title {
+        margin-bottom: 5.7rem;
+    }
+    &-left-img {
+        width: 55.1112rem;
+        height: 27.9543rem;
+    }
+    &-right {
+        width: 64.3rem;
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        position: relative;
+
+        svg {
+            position: absolute;
+            bottom: 0;
+            width: 78.1602rem;
+            height: 14.8084rem;
+        }
+    }
+    &-item {
+        display: flex;
+        gap: 2.7rem;
+
+        &__number {
+            font-family: 'Myriad Pro Bold';
+            font-size: 1.8rem;
+            font-style: normal;
+            line-height: normal;
+            height: fit-content;
+            margin-top: 0.5rem;
+        }
+        &__text {
+            color: #1F1F1F;
+            font-family: 'Segoe UI';
+            font-size: 2.2rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+        }
+    }
+}

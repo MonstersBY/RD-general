@@ -1,0 +1,65 @@
+.reson-use-wifi {
+    &__subtitle {
+        color: #477AFC;
+        font-family: 'Segoe UI Bold';
+        font-size: 2.2rem;
+        font-style: normal;
+        line-height: normal;
+        margin-bottom: 1.5rem;
+    }
+    &-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-title {
+        margin-bottom: 6.7rem;
+    }
+    &-item {
+        width: 42.8rem;
+        height: 50rem;
+        border-radius: 20px;
+        padding: 4.3rem 3.9rem 5.7rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &:nth-child(1) {
+            background: url(../img/traps/reson-use-wifi/back-1.jpg) no-repeat;
+            background-size: cover;
+
+            .reson-use-wifi-item__number {
+                color: #477AFC;
+            }
+        }
+        &:nth-child(2) {
+            background: url(../img/traps/reson-use-wifi/back-2.jpg) no-repeat;
+            background-size: cover;
+
+            .reson-use-wifi-item__number {
+                color: #47CF93;
+            }
+        }
+        &:nth-child(3) {
+            background: url(../img/traps/reson-use-wifi/back-3.jpg) no-repeat;
+            background-size: cover;
+
+            .reson-use-wifi-item__number {
+                color: #AE45E4;
+            }
+        }
+        &__title {
+            color: #FFF;
+            font-family: 'Segoe UI Bold';
+            font-size: 2.6rem;
+            font-style: normal;
+            line-height: 157.692%;
+        }
+        &__number {
+            font-family: 'Myriad Pro Bold';
+            font-size: 1.8rem;
+            font-style: normal;
+            line-height: normal;
+        }
+    }
+
+}

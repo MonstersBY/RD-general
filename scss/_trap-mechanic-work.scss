@@ -1,0 +1,37 @@
+.mechanic-work {
+    &-top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 6.5rem;
+    }
+    .btn {
+        font-family: 'Segoe UI';
+        padding-right: 13.5rem;
+    }
+    &-container {
+        display: flex;
+        gap: 3rem;
+        flex-direction: column;
+        padding: 6.7rem 0 6.4rem;
+        border-top: 3px solid #11141A;
+        border-bottom: 3px solid #11141A;
+    }
+    &-item {
+        font-family: 'Segoe UI Bold';
+        font-style: normal;
+        line-height: normal;
+        display: flex;
+        align-items: end;
+        gap: 6rem;
+        margin-left: 1rem;
+        &__number {
+            color: #477AFC;
+            font-size: 1.8rem;
+        }
+        &__title {
+            color: #1F1F1F;
+            font-size: 2.2rem;
+        }
+    }
+
+}

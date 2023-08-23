@@ -21,3 +21,10 @@ if($('.competitive .competitive-slide').length) {
 		x<9 ? $(this).html('0'+(x+1)) : $(this).html(x+1)
 	})
 }
+
+if($('.popular-question-item').length) {
+    $('.popular-question-item').on('click', function(){
+        $(this).find('.popular-question-item__head').toggleClass('active')
+        $(this).find('.popular-question-item__body').slideToggle()
+    })
+}

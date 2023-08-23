@@ -49,6 +49,10 @@
     font-size: 2.2rem;
     font-style: normal;
     line-height: normal;
+
+    &.blue {
+      color: #477AFC;
+    }
   }
 }
 .swiper-pagination-bullet {
@@ -67,11 +71,6 @@
 }
 
 @media (max-width: 48em) {
-  .swiper-pagination {
-    overflow: auto;
-    width: 42.3rem;
-    padding: 0 0 3rem;
-  }
   .main {
 
     &-title {
@@ -128,6 +127,23 @@
   .swiper-pagination-bullet-active {
     opacity: 0.3;
   }
+  .swiper-pagination-container {
+    position: absolute;
+    overflow: hidden;
+    width: 44rem;
+    padding: 0 0 3rem;
+
+    .swiper-pagination {
+      display: flex;
+      gap: 4.5rem;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .swiper-pagination-bullet {
+      width: 7.5rem;
+      flex: none;
+    }
+  }
 }
 
 
@@ -148,6 +164,19 @@
 @import "service-packages";
 @import "consultation";
 @import "reviews";
+
+@import "trap-baner";
+@import "trap-our-cases";
+@import "trap-key-features";
+@import "trap-how-it-works";
+@import "trap-consultation";
+@import "trap-reson-use-wifi";
+@import "trap-mechanic-work";
+@import "trap-know-ad";
+@import "trap-convenient-lk";
+@import "trap-show-ad";
+@import "trap-top-week";
+@import "trap-popular-question";
 
 
 @media (min-width: 48.01em) {

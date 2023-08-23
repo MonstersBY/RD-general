@@ -189,13 +189,26 @@
             }
         }
         &-pagination {
-            top: auto;
-            bottom: -18.3%;
+            top: 0;
+            bottom: auto;
             right: 0;
             left: 0;
             margin: 0 auto;
             display: flex;
             gap: 4.5rem;
+            transition: all 0.2s ease-in-out;
+
+            &-container {
+                bottom: -18.3%;
+                right: 0;
+                left: 0;
+                margin: 0 auto;
+                height: 10rem;
+            }
+            .swiper-pagination-bullet {
+                width: 7.5rem;
+                flex: none;
+            }
         }
     }
 }

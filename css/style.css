@@ -198,6 +198,9 @@ section {
   font-style: normal;
   line-height: normal;
 }
+.main-subtitle.blue {
+  color: #477AFC;
+}
 
 .swiper-pagination-bullet {
   font-family: "Euclid Circular A Bold";
@@ -216,11 +219,6 @@ section {
 }
 
 @media (max-width: 48em) {
-  .swiper-pagination {
-    overflow: auto;
-    width: 42.3rem;
-    padding: 0 0 3rem;
-  }
   .main-title {
     font-family: "Segoe UI Bold";
     font-size: 6rem;
@@ -278,11 +276,31 @@ section {
   .swiper-pagination-bullet-active {
     opacity: 0.3;
   }
+  .swiper-pagination-container {
+    position: absolute;
+    overflow: hidden;
+    width: 44rem;
+    padding: 0 0 3rem;
+  }
+  .swiper-pagination-container .swiper-pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 4.5rem;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .swiper-pagination-container .swiper-pagination-bullet {
+    width: 7.5rem;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+  }
 }
 .baner {
   background: #1F1F1F;
   padding-top: 14.8rem;
-  padding-bottom: 28rem;
+  padding-bottom: 29rem;
   margin-bottom: 0;
   color: #ECECEC;
 }
@@ -637,15 +655,18 @@ section {
     height: 7rem;
   }
   .our-cases-pagination {
-    top: auto;
+    top: 0;
+    bottom: auto;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+  .our-cases-pagination-container {
     bottom: -11.7%;
     right: 0;
     left: 0;
     margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 4.6rem;
+    height: 10rem;
   }
   .our-cases-pagination .swiper-pagination-bullet {
     color: #292929;
@@ -657,6 +678,10 @@ section {
     height: auto;
     position: relative;
     background: inherit;
+    width: 7.5rem;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
   }
   .our-cases-pagination .swiper-pagination-bullet::after {
     font-family: "Euclid Circular A";
@@ -1037,8 +1062,8 @@ section {
     height: 7rem;
   }
   .competitive-pagination {
-    top: auto;
-    bottom: -18.3%;
+    top: 0;
+    bottom: auto;
     right: 0;
     left: 0;
     margin: 0 auto;
@@ -1046,6 +1071,21 @@ section {
     display: -ms-flexbox;
     display: flex;
     gap: 4.5rem;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .competitive-pagination-container {
+    bottom: -18.3%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    height: 10rem;
+  }
+  .competitive-pagination .swiper-pagination-bullet {
+    width: 7.5rem;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
   }
 }
 .advantages .main-title {
@@ -2543,6 +2583,649 @@ section {
     gap: 4.5rem;
   }
 }
+.baner-right-form__title {
+  font-family: "Segoe UI Bold";
+  font-size: 3rem;
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 5rem;
+}
+.baner .letter-k {
+  width: 83.5rem;
+  left: 51%;
+}
+.baner__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 29.5rem;
+}
+.baner__form-item {
+  margin-bottom: 4rem;
+  font-family: "Myriad Pro Bold";
+  font-size: 1.8rem;
+  font-style: normal;
+  line-height: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.baner__form-item span {
+  color: #8892C5;
+}
+.baner__form-item input {
+  border-bottom: 1px solid #96ACF9;
+  padding-bottom: 1.3rem;
+}
+.baner__form .btn {
+  margin-top: 1.6rem;
+  padding-right: 12.9rem;
+}
+
+.our-cases.full-black {
+  background: rgb(31, 31, 31);
+  margin-bottom: 0;
+}
+.our-cases.full-black .our-cases-top {
+  margin-bottom: 1rem;
+}
+.our-cases.full-black .our-cases-swiper1 {
+  padding-top: 12.5rem;
+  margin-top: -3rem;
+}
+.our-cases.full-black .our-cases-button-next, .our-cases.full-black .our-cases-button-prev {
+  top: 5.5%;
+}
+.our-cases.full-black .our-cases-button-next {
+  left: 6.5rem;
+  right: auto;
+}
+.our-cases.full-black .our-cases-button-prev {
+  left: 0;
+  right: auto;
+}
+.our-cases.full-black .our-cases-pagination {
+  top: 1% !important;
+  bottom: auto !important;
+  right: 0 !important;
+  left: auto !important;
+  width: auto !important;
+}
+.our-cases.full-black .our-cases-pagination .swiper-pagination-bullet::after {
+  content: "слайд";
+}
+
+.trap.key-features {
+  background: #1F1F1F;
+  margin-top: -1rem;
+  padding-top: 21rem;
+  margin-bottom: 0;
+}
+.trap.key-features .main-title {
+  color: #FFF;
+}
+.trap.key-features .key-features-item {
+  color: #FFF;
+  border-radius: 20px;
+  padding: 5.6rem 4.9rem 5.7rem 4.9rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+}
+.trap.key-features .key-features-item:nth-child(1) {
+  background: url(../img/traps/key-features/back-1.jpg) no-repeat;
+  background-size: cover;
+}
+.trap.key-features .key-features-item:nth-child(2) {
+  background: url(../img/traps/key-features/back-2.jpg) no-repeat;
+  background-size: cover;
+}
+.trap.key-features .key-features-item:nth-child(3) {
+  background: url(../img/traps/key-features/back-3.jpg) no-repeat;
+  background-size: cover;
+}
+.trap.key-features .key-features-item__number {
+  margin-left: 0;
+  margin-bottom: 10rem;
+}
+.trap.key-features .key-features-item__title {
+  font-size: 2.6rem;
+  margin-bottom: 2.8rem;
+}
+.trap.key-features .key-features-item__subtitle {
+  text-align: center;
+}
+
+.how-it-works {
+  background: #1F1F1F;
+  margin-top: -1rem;
+  padding-top: 21rem;
+  margin-bottom: 0;
+  color: #FFF;
+}
+.how-it-works .main-title {
+  margin-bottom: 4.1rem;
+}
+.how-it-works-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.how-it-works .container {
+  position: relative;
+}
+.how-it-works svg {
+  position: absolute;
+  top: 16rem;
+  left: 19.3rem;
+}
+.how-it-works-item {
+  width: 33.3rem;
+}
+.how-it-works-item__number {
+  font-family: "Segoe UI Bold";
+  font-size: 12rem;
+  font-style: normal;
+  line-height: normal;
+  text-transform: uppercase;
+  background: linear-gradient(182deg, #46CE93 0%, #1F1F1F 74.73%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+.how-it-works-item__number::after {
+  content: "шаг";
+  font-family: "Segoe UI";
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #FFF;
+  text-transform: uppercase;
+  position: absolute;
+  display: block;
+  background: #FFF;
+  background-clip: text;
+  -webkit-background-clip: text;
+  top: 4.3rem;
+  left: 8.3rem;
+}
+.how-it-works-item__title {
+  font-family: "Segoe UI Bold";
+  font-size: 2.6rem;
+  font-style: normal;
+  line-height: 134.615%;
+  margin-bottom: 2rem;
+}
+.how-it-works-item__subtitle {
+  font-family: "Segoe UI";
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 144.444%;
+}
+
+.consultation.trap {
+  margin-top: -1rem;
+  padding-top: 25rem;
+  padding-bottom: 20.5rem;
+  margin-bottom: 19rem;
+}
+.consultation.trap .consultation__title svg {
+  width: 5.4rem;
+  height: 5.5rem;
+  position: relative;
+  top: 1rem;
+}
+.consultation.trap .consultation-right {
+  position: absolute;
+  right: -19rem;
+  top: -8.5rem;
+  width: 92rem;
+}
+.consultation.trap .consultation__subtitle {
+  color: #8892C5;
+}
+
+.reson-use-wifi__subtitle {
+  color: #477AFC;
+  font-family: "Segoe UI Bold";
+  font-size: 2.2rem;
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 1.5rem;
+}
+.reson-use-wifi-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.reson-use-wifi .main-title {
+  margin-bottom: 6.7rem;
+}
+.reson-use-wifi-item {
+  width: 42.8rem;
+  height: 50rem;
+  border-radius: 20px;
+  padding: 4.3rem 3.9rem 5.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.reson-use-wifi-item:nth-child(1) {
+  background: url(../img/traps/reson-use-wifi/back-1.jpg) no-repeat;
+  background-size: cover;
+}
+.reson-use-wifi-item:nth-child(1) .reson-use-wifi-item__number {
+  color: #477AFC;
+}
+.reson-use-wifi-item:nth-child(2) {
+  background: url(../img/traps/reson-use-wifi/back-2.jpg) no-repeat;
+  background-size: cover;
+}
+.reson-use-wifi-item:nth-child(2) .reson-use-wifi-item__number {
+  color: #47CF93;
+}
+.reson-use-wifi-item:nth-child(3) {
+  background: url(../img/traps/reson-use-wifi/back-3.jpg) no-repeat;
+  background-size: cover;
+}
+.reson-use-wifi-item:nth-child(3) .reson-use-wifi-item__number {
+  color: #AE45E4;
+}
+.reson-use-wifi-item__title {
+  color: #FFF;
+  font-family: "Segoe UI Bold";
+  font-size: 2.6rem;
+  font-style: normal;
+  line-height: 157.692%;
+}
+.reson-use-wifi-item__number {
+  font-family: "Myriad Pro Bold";
+  font-size: 1.8rem;
+  font-style: normal;
+  line-height: normal;
+}
+
+.mechanic-work-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 6.5rem;
+}
+.mechanic-work .btn {
+  font-family: "Segoe UI";
+  padding-right: 13.5rem;
+}
+.mechanic-work-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 6.7rem 0 6.4rem;
+  border-top: 3px solid #11141A;
+  border-bottom: 3px solid #11141A;
+}
+.mechanic-work-item {
+  font-family: "Segoe UI Bold";
+  font-style: normal;
+  line-height: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  gap: 6rem;
+  margin-left: 1rem;
+}
+.mechanic-work-item__number {
+  color: #477AFC;
+  font-size: 1.8rem;
+}
+.mechanic-work-item__title {
+  color: #1F1F1F;
+  font-size: 2.2rem;
+}
+
+.know-ad .main-title {
+  width: 96.7rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+.know-ad-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.know-ad-item {
+  width: 33.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.know-ad-item__title {
+  color: #1F1F1F;
+  text-align: center;
+  font-family: "Segoe UI";
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 144.444%;
+  text-align: center;
+}
+
+.convenient-lk {
+  padding-top: 22.5rem;
+}
+.convenient-lk .container {
+  border-radius: 30px;
+  background: url(../img/traps/conv-lk.jpg) no-repeat;
+  background-size: cover;
+  position: relative;
+  color: #FFF;
+  padding: 29.8rem 26.9rem 10.7rem;
+  text-align: center;
+}
+.convenient-lk .main-title {
+  margin-bottom: 3.7rem;
+}
+.convenient-lk-img {
+  position: absolute;
+  width: 79.9rem;
+  height: 71.2rem;
+  top: -22.7rem;
+}
+.convenient-lk-text {
+  width: 63rem;
+  margin: 0 auto;
+  font-family: "Segoe UI";
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 144.444%;
+}
+
+.show-ad {
+  margin-bottom: 23rem;
+}
+.show-ad .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.show-ad .main-title {
+  margin-bottom: 5.7rem;
+}
+.show-ad-left-img {
+  width: 55.1112rem;
+  height: 27.9543rem;
+}
+.show-ad-right {
+  width: 64.3rem;
+  margin-top: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5rem;
+  position: relative;
+}
+.show-ad-right svg {
+  position: absolute;
+  bottom: 0;
+  width: 78.1602rem;
+  height: 14.8084rem;
+}
+.show-ad-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2.7rem;
+}
+.show-ad-item__number {
+  font-family: "Myriad Pro Bold";
+  font-size: 1.8rem;
+  font-style: normal;
+  line-height: normal;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 0.5rem;
+}
+.show-ad-item__text {
+  color: #1F1F1F;
+  font-family: "Segoe UI";
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.top-week .container {
+  position: relative;
+  background: url(../img/traps/back-top-week.jpg) no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+  position: relative;
+  padding: 14rem 0;
+}
+.top-week-img {
+  position: absolute;
+  bottom: 0;
+  left: 6rem;
+}
+.top-week-right {
+  width: 66rem;
+  margin-left: auto;
+  position: relative;
+}
+.top-week-info {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  right: 2.8rem;
+  top: 2.8rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.top-week-info__text {
+  color: #FFF;
+  text-align: right;
+  font-family: "Segoe UI Bold";
+  font-size: 2rem;
+  font-style: normal;
+  line-height: 130%;
+}
+.top-week-info__img {
+  width: 8rem;
+  height: 8rem;
+}
+.top-week-subtitle {
+  color: #00FF8F;
+  font-family: "Myriad Pro Bold";
+  font-size: 2.2rem;
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 3.7rem;
+}
+.top-week .main-title {
+  color: #FFF;
+  margin-bottom: 1.8rem;
+  font-size: 4.5rem;
+}
+.top-week-text {
+  color: #FFF;
+  margin-bottom: 5.8rem;
+  font-family: "Segoe UI";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+.top-week .btn {
+  background: -webkit-gradient(linear, left top, right top, from(#FEFEFE), to(#FFF));
+  background: linear-gradient(90deg, #FEFEFE 0%, #FFF 100%);
+  color: #292929;
+  padding-right: 11rem;
+}
+
+.popular-question {
+  background-image: url(../img/traps/popular-blur-balls.png);
+  background-repeat: no-repeat;
+  background-size: 46.6rem 72rem;
+  background-position: 45rem -1rem;
+}
+.popular-question .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.popular-question-subtitle {
+  color: #3765E0;
+  font-family: "Segoe UI Bold";
+  font-size: 2.2rem;
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 8.4rem;
+}
+.popular-question .main-title {
+  margin-bottom: 2.7rem;
+}
+.popular-question-text {
+  font-family: "Segoe UI";
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 8.5rem;
+}
+.popular-question .btn {
+  font-family: "Segoe UI";
+  padding-right: 10.6rem;
+}
+.popular-question-left {
+  width: 42.4rem;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
+.popular-question-right {
+  width: 65.5rem;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.popular-question-item {
+  border-bottom: 1px solid #CACFDB;
+  padding: 3rem 0;
+}
+.popular-question-item__head {
+  font-family: "Segoe UI Bold";
+  font-size: 2.2rem;
+  font-style: normal;
+  line-height: 154.545%;
+  position: relative;
+  width: 58.9rem;
+}
+.popular-question-item__head.active::after {
+  -webkit-transform: translateY(-50%) rotate(-90deg);
+          transform: translateY(-50%) rotate(-90deg);
+}
+.popular-question-item__head::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1.2rem;
+  height: 2.4375rem;
+  background-image: url(../img/icon/btn_arrow-left-black.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  right: -6rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.popular-question-item__body {
+  display: none;
+  padding-top: 3rem;
+  font-family: "Segoe UI";
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.popular-question-item:first-child {
+  padding-top: 0;
+}
+.popular-question-item:last-child {
+  border: none;
+}
+
 @media (min-width: 48.01em) {
   .mobile {
     display: none;

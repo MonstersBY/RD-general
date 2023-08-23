@@ -1,0 +1,42 @@
+.baner {
+    &-right-form__title {
+        font-family: 'Segoe UI Bold';
+        font-size: 3rem;
+        font-style: normal;
+        line-height: normal;
+        margin-bottom: 5rem;
+    }
+    .letter-k {
+        width: 83.5rem;
+        left: 51%;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        width: 29.5rem;
+
+        &-item {
+            margin-bottom: 4rem;
+            font-family: 'Myriad Pro Bold';
+            font-size: 1.8rem;
+            font-style: normal;
+            line-height: normal;
+            display: flex;
+            flex-direction: column;
+
+            span {
+                color: #8892C5;
+            }
+
+            input {
+                border-bottom: 1px solid #96ACF9;
+                padding-bottom: 1.3rem;
+            }
+
+        }
+        .btn {
+            margin-top: 1.6rem;
+            padding-right: 12.9rem;
+        }
+    }
+}

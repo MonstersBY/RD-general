@@ -203,13 +203,19 @@
             }
         }
         &-pagination {
-            top: auto;
-            bottom: -11.7%;
+            top: 0;
+            bottom: auto;
             right: 0;
             left: 0;
-            margin: 0 auto;    
-            display: flex;
-            gap: 4.6rem;
+            margin: 0 auto;
+
+            &-container {
+                bottom: -11.7%;
+                right: 0;
+                left: 0;
+                margin: 0 auto;
+                height: 10rem;
+            }
     
             .swiper-pagination-bullet {
                 color: #292929;
@@ -221,6 +227,8 @@
                 height: auto;
                 position: relative;
                 background: inherit;
+                width: 7.5rem;
+                flex: none;
     
                 &::after {
                     font-family: 'Euclid Circular A';

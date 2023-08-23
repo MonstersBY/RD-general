@@ -1,0 +1,25 @@
+.consultation.trap {
+    margin-top: -1rem;
+    padding-top: 25rem;
+    padding-bottom: 20.5rem;
+    margin-bottom: 19rem;
+
+    .consultation__title {
+
+        svg {
+            width: 5.4rem;
+            height: 5.5rem;
+            position: relative;
+            top: 1rem;
+        }
+    }
+    .consultation-right {
+        position: absolute;
+        right: -19rem;
+        top: -8.5rem;
+        width: 92rem;
+    }
+    .consultation__subtitle {
+        color: #8892C5;
+    }
+}

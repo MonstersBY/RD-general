@@ -1,0 +1,69 @@
+.top-week {
+    .container {
+        position: relative;
+        background: url(../img/traps/back-top-week.jpg) no-repeat;
+        background-size: cover;
+        border-radius: 30px;
+        position: relative;
+        padding: 14rem 0;
+    }
+    &-img {
+        position: absolute;
+        bottom: 0;
+        left: 6rem;
+    }
+    &-right {
+        width: 66rem;
+        margin-left: auto;
+        position: relative;
+    }
+    &-info {
+        position: absolute;
+        display: flex;
+        gap: 2rem;
+        right: 2.8rem;
+        top: 2.8rem;
+        align-items: center;
+
+        &__text {
+            color: #FFF;
+            text-align: right;
+            font-family: 'Segoe UI Bold';
+            font-size: 2rem;
+            font-style: normal;
+            line-height: 130%;
+        }
+
+        &__img {
+            width: 8rem;
+            height: 8rem;
+        }
+    }
+    &-subtitle {
+        color: #00FF8F;
+        font-family: 'Myriad Pro Bold';
+        font-size: 2.2rem;
+        font-style: normal;
+        line-height: normal;
+        margin-bottom: 3.7rem;
+    }
+    .main-title {
+        color: #FFF;
+        margin-bottom: 1.8rem;
+        font-size: 4.5rem;
+    }
+    &-text {
+        color: #FFF;
+        margin-bottom: 5.8rem;
+        font-family: 'Segoe UI';
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+    .btn {
+        background: linear-gradient(90deg, #FEFEFE 0%, #FFF 100%);
+        color: #292929;
+        padding-right: 11rem;
+    }
+}

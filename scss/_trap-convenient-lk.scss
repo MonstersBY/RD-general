@@ -1,0 +1,30 @@
+.convenient-lk {
+    padding-top: 22.5rem;
+    .container {
+        border-radius: 30px;
+        background: url(../img/traps/conv-lk.jpg) no-repeat;
+        background-size: cover;
+        position: relative;
+        color: #FFF;
+        padding: 29.8rem 26.9rem 10.7rem;
+        text-align: center;
+    }
+    .main-title {
+        margin-bottom: 3.7rem;
+    }
+    &-img {
+        position: absolute;
+        width: 79.9rem;
+        height: 71.2rem;
+        top: -22.7rem;
+    }
+    &-text {
+        width: 63rem;
+        margin: 0 auto;
+        font-family: 'Segoe UI';
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 144.444%;
+    }
+}

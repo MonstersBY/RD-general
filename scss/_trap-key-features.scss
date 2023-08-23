@@ -1,0 +1,40 @@
+.trap.key-features {
+    background: #1F1F1F;
+    margin-top: -1rem;
+    padding-top: 21rem;
+    margin-bottom: 0;
+
+    .main-title {
+        color: #FFF;
+    }
+    .key-features-item {
+        color: #FFF;
+        border-radius: 20px;
+        padding: 5.6rem 4.9rem 5.7rem 4.9rem;
+        align-items: center;
+        height: auto;
+        &:nth-child(1) {
+            background: url(../img/traps/key-features/back-1.jpg) no-repeat;
+            background-size: cover;
+        }
+        &:nth-child(2) {
+            background: url(../img/traps/key-features/back-2.jpg) no-repeat;
+            background-size: cover;
+        }
+        &:nth-child(3) {
+            background: url(../img/traps/key-features/back-3.jpg) no-repeat;
+            background-size: cover;
+        }
+    }
+    .key-features-item__number {
+        margin-left: 0;
+        margin-bottom: 10rem;
+    }
+    .key-features-item__title {
+        font-size: 2.6rem;
+        margin-bottom: 2.8rem;
+    }
+    .key-features-item__subtitle {
+        text-align: center;
+    }
+}
