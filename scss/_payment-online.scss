@@ -1,0 +1,244 @@
+.payment-online {
+    background: #1F1F1F;
+    padding: 28.4rem 0 21.5rem;
+
+    &__container {
+        width: 72.2rem;
+    }
+    &__title {
+        color: #FFF;
+        font-family: 'Segoe UI';
+        font-size: 5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 6.65rem;
+        margin-bottom: 6.5rem;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 4.5rem;
+
+        &-item {
+            input[type=text] {
+                color: #FFF;
+                font-family: 'Myriad Pro';
+                font-size: 2rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 2.4rem;
+                border-bottom: 0.1rem solid #96ACF9;
+                width: 100%;
+                padding: 1.2rem 0 0.8rem;
+            }
+            textarea {
+                color: #FFF;
+                font-family: 'Myriad Pro';
+                font-size: 2rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 2.4rem;
+                border-bottom: 0.1rem solid #96ACF9;
+                width: 100%;
+                padding: 1.2rem 0 0.8rem;
+                resize: none;
+                height: 4.5rem;
+            }
+        }
+        &-name {
+            color: #8892C5;
+            font-family: 'Segoe UI';
+            font-size: 1.8rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 133.333%;
+
+            span {
+                color: #CA1D31;
+            }
+
+            &-margin {
+                margin-bottom: 2.8rem;
+            }
+
+
+        }
+        &-radios {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        &-radio {
+            position: relative;
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            cursor: pointer;
+
+            input {
+                display: none;
+            }
+            &-custom {
+                width: 1.6rem;
+                height: 1.6rem;
+
+                svg {
+                    width: 1.6rem;
+                    height: 1.6rem;
+
+                    .circle {
+                        display: none;
+                    }
+                }
+            }
+            p {
+                color: #8892C5;
+                font-family: 'Segoe UI';
+                font-size: 1.8rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+            input:checked ~ p {
+                color: #FFF;
+			}
+            input:checked ~ &-custom {
+                svg {
+
+                    .circle {
+                        display: block;
+                    }
+                }
+			}
+        }
+        .btn {
+            margin-top: 3rem;
+            width: 29.5rem;
+        }
+    }
+}
+
+@media (max-width: 48em) {
+    .payment-online {
+        padding: 26.4rem 0 21.5rem;
+    
+        &__container {
+            width: 100%;
+        }
+        &__title {
+            color: #FFF;
+            font-family: 'Segoe UI';
+            font-size: 5.82rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 7.2rem;
+            margin-bottom: 7.5rem;
+        }
+        &__form {
+            display: flex;
+            flex-direction: column;
+            gap: 7.5rem;
+    
+            &-item {
+                input[type=text] {
+                    color: #FFF;
+                    font-size: 3.65rem;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    border-bottom: 0.2rem solid #96ACF9;
+                    width: 100%;
+                    padding: 1.3rem 0 1.6rem;
+                }
+                textarea {
+                    color: #FFF;
+                    font-size: 3.65rem;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    border-bottom: 0.2rem solid #96ACF9;
+                    width: 100%;
+                    padding: 1.3rem 0 1.6rem;
+                    height: 8rem;
+                }
+            }
+            &-name {
+                font-size: 3.4rem;
+    
+                span {
+                    color: #CA1D31;
+                }
+    
+                &-margin {
+                    margin-bottom: 4.3rem;
+                }
+    
+    
+            }
+            &-radios {
+                display: flex;
+                flex-direction: column;
+                gap: 2.9rem;
+                padding-left: 1rem;
+            }
+            &-radio {
+                position: relative;
+                display: flex;
+                gap: 3.1rem;
+                align-items: center;
+                cursor: pointer;
+    
+                input {
+                    display: none;
+                }
+                &-custom {
+                    width: 2.9rem;
+                    height: 2.9rem;
+    
+                    svg {
+                        width: 2.9rem;
+                        height: 2.9rem;
+    
+                        .circle {
+                            display: none;
+                        }
+                    }
+                }
+                p {
+                    font-size: 3.4rem;
+                }
+                input:checked ~ p {
+                    color: #FFF;
+                }
+                input:checked ~ &-custom {
+                    svg {
+    
+                        .circle {
+                            display: block;
+                        }
+                    }
+                }
+            }
+            .btn {
+                margin-top: 7rem;
+                width: 53.5rem;
+                height: 11rem;
+
+                &::after {
+                    content: ">";
+                    display: block;
+                    background-size: contain;
+                    width: 4rem;
+                    height: 8rem;
+                    position: absolute;
+                    font-family: "Circe";
+                    font-size: 6rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    background: unset;
+                }
+            }
+        }
+    }
+}
