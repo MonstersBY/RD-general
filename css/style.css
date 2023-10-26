@@ -3229,6 +3229,7 @@ section {
 .payment-online {
   background: #1F1F1F;
   padding: 28.4rem 0 21.5rem;
+  margin-bottom: 0;
 }
 .payment-online__container {
   width: 72.2rem;
